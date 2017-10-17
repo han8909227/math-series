@@ -9,6 +9,7 @@ for n in range(2, 20):
 
 @pytest.mark.parametrize('n,result', FIB_NUMS)
 def test_fib(n, result):
+    """Test the fibonacci series for correct output."""
     import series
     assert series.fibonacci(n) == result
 
